@@ -4,12 +4,20 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
         
-        <bean id = "first" class = "com.bridgelabz.di.Student">
+      <!--   <bean id = "first" class = "com.bridgelabz.di.Student">
         <property name="studentname" value = "shirisha"></property>
         <property name="id" value = "24"></property>
         </bean>
          <bean id = "second" class = "com.bridgelabz.di.Student">
         <property name="studentname" value = "monika"></property>
         <property name="id" value = "28"></property>
+        </bean> -->
+        <bean id = "first" class = "com.bridgelabz.di.Student">
+        <constructor-arg name="studentname" value = "shirisha"/>
+        <constructor-arg name="id" value = "24"/>
+        </bean>
+        <bean id = "second" class = "com.bridgelabz.di.Student">
+        <constructor-arg name="studentname" value = "monika"/>
+        <constructor-arg name="id" value = "28"/>
         </bean>
         </beans>
